@@ -38,7 +38,7 @@ function App() {
         <span className="span-bad">{badGuess}</span>
         <span className="span-good">{GoodGuess}</span>
       </div>
-      {position < teams.length ? <Card image={teams[position].image} title={teams[position].title}></Card> : `${GoodGuess}/${teams.length}.`}
+      {position < teams.length ? <Card image={teams[position].image} title={teams[position].title}></Card> : `${GoodGuess}/${teams.length} Correct answers.`}
       <div className="score-container">
         <button onClick={handleLie}>FALSE</button>
         <button onClick={handleTruth}>TRUE</button>
